@@ -152,7 +152,7 @@ console.groupCollapsed("Ejercicio 19");
 // Ejercicio 19
 let numeroParaRedondear = 3.6;
 let numeroRedondeado = Math.round(numero);
-console.log("El número redondeado es:", redondeado);
+console.log("El número redondeado es:", numeroRedondeado);
 
 console.groupEnd();
 
@@ -166,162 +166,278 @@ console.groupEnd();
 
 console.groupCollapsed("Ejercicio 21");
 // Ejercicio 21
+// Calcular el triple de 4.
+console.log(4*3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 22");
 // Ejercicio 22
+// Calcular el cuadrado de 6
+console.log(Math.sqrt(6));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 23");
 // Ejercicio 23
+// Calcular el cubo de 3.
+console.log(3**3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 24");
 // Ejercicio 24
+// Calcular la suma de los primeros 10 números naturales
+let suma = 0;
+for (let i = 1; i <= 10; i++) {
+    suma += i;
+}
+console.log("La suma de los primeros 10 números naturales es:", suma);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 25");
 // Ejercicio 25
+// Calcular la resta entre 50 y 25.
+console.log(50-25);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 26");
 // Ejercicio 26
+// Multiplicar 7 por 9.
+console.log(7*9);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 27");
 // Ejercicio 27
+// Dividir 144 por 12.
+console.log(144/12);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 28");
 // Ejercicio 28
+// Obtener el módulo de 17 dividido por 4.
+console.log(17%4);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 29");
 // Ejercicio 29
+// Generar un número aleatorio entre 20 y 30.
+let numeroRnadonCreado = Math.round(Math.random()*100)
+console.log(numeroRnadonCreado);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 30");
 // Ejercicio 30
+// Elevar 2 a la potencia de 8.
+console.log(2**8);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 31");
 // Ejercicio 31
+// .Calcular la raíz cuadrada de 144.
+console.log(Math.sqrt(144));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 32");
 // Ejercicio 32
+// .Convertir 100 grados Celsius a Fahrenheit.
+console.log((100 * 9/5) +32);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 33");
 // Ejercicio 33
+// .Calcular el área de un rectángulo de base 5 y altura 10.
+console.log(5*10);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 34");
 // Ejercicio 34
+// Calcular el perímetro de un círculo con radio 6
+const radioCirculo = 6;
+const pi = Math.PI;
+const perimetroCirculo = 2 * pi * radio;
+console.log(perimetroCirculo);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 35");
 // Ejercicio 35
+// Calcular el volumen de un cubo con lado 4
+console.log(4*4*4);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 36");
 // Ejercicio 36
+// Calcular el área de un rombo con diagonales de 8 y 10.
+console.log((10*8) / 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 37");
 // Ejercicio 37
+// Calcular el área de un trapecio con bases 6 y 10 y altura 4.
+console.log(((6+10)*4) / 2 );
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 38");
 // Ejercicio 38
+// .Generar la tabla de multiplicar del número 8.
+let numberTabla = 8 
+
+for (let i = 0; i <= 5; i++) {
+    console.log(` 8 x ${i} =`, 8*i);
+}
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 39");
 // Ejercicio 39
+// Encontrar el número mayor entre 15, 20 y 25.
+let nuemrosABuscar = ['15','20','25']
+console.log(Math.max(nuemrosABuscar));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 40");
 // Ejercicio 40
+// .Encontrar el número menor entre 50, 75 y 100
+let nuemrosABuscarMenor = ['15','20','25']
+console.log(Math.min(nuemrosABuscarMenor));
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 41");
 // Ejercicio 41
+//.Calcular el promedio de 7, 9 y 12
+console.log((7+9+12)/3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 42");
 // Ejercicio 42
+// Calcular la factorial de 7.
+console.log(7*6*5*4*3*2*1);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 43");
 // Ejercicio 43
+// Redondear el número 7.9.
+console.log(Math.round(7.9));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 44");
 // Ejercicio 44
+// Calcular el doble de 15.
+console.log(15*2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 45");
 // Ejercicio 45
+// Calcular el triple de 6.
+console.log(6*3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 46");
 // Ejercicio 46
+// Calcular el cuadrado de 8.
+console.log(4*4);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 47");
 // Ejercicio 47
+// .Calcular el cubo de 4.
+console.log(4**3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 48");
 // Ejercicio 48
+// Calcular la suma de los primeros 15 números naturales.
+let numeroInicial = 1;
+let sumaNueva = 0;
+
+for (let i = 1; i <= 15; i++) {
+    sumaNueva += i;
+}
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 49");
 // Ejercicio 49
+// Calcular la resta entre 100 y 55.
+console.log(100-55);
+console.log(sumaNueva);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 50");
 // Ejercicio 50
+// Multiplicar 6 por 8.
+console.log(6*8);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 51");
 // Ejercicio 51
+// Dividir 225 por 15.
+console.log(255/15);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 52");
 // Ejercicio 52
+//Obtener el módulo de 20 dividido por 7.
+console.log(29%7);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 53");
 // Ejercicio 53
+// Generar un número aleatorio entre 40 y 50.
+let numeroNuevoRamdom = Math.floor(Math.random() * (50 - 40 + 1)) + 40;
+console.log(numeroNuevoRamdom);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 54");
 // Ejercicio 54
+// .Elevar 3 a la potencia de 4
+console.log(3**4);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 55");
 // Ejercicio 55
+// Calcular la raíz cuadrada de 169.
+console.log(Math.sqrt(169));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 56");
 // Ejercicio 56
+// Convertir 80 grados Celsius a Fahrenheit.
+console.log((80 * 9/5) + 32);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 57");
 // Ejercicio 57
+const baseRectangulo = 8;
+const alturaRectangulo = 12;
+const areaRectangulo = baseRectangulo * alturaRectangulo;
+console.log("El área del rectángulo es:", areaRectangulo);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 58");
 // Ejercicio 58
+const radioCirculoNuevo = 8;
+const perimetroCirculoNuevo = 2 * Math.PI * radioCirculo;
+console.log("El perímetro del círculo es:", perimetroCirculoNuevo);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 59");
 // Ejercicio 59
+const ladoCubo = 5;
+const volumenCubo = Math.pow(ladoCubo, 3);
+console.log("El volumen del cubo es:", volumenCubo);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 60");
 // Ejercicio 60
+const diagonalMayorRombo = 16;
+const diagonalMenorRombo = 12;
+const areaRombo = (diagonalMayorRombo * diagonalMenorRombo) / 2;
+console.log("El área del rombo es:", areaRombo);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 61");
