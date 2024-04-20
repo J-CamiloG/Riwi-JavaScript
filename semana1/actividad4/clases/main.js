@@ -32,5 +32,15 @@ numero--
 numero+=30
 
 //operadores logicos
+function factorial(numero) {
+    if (numero === 0 || numero === 1) {
+        return 1;
+    } else {
+        return numero * factorial(numero - 1);
+    }
+}
 
+let numeroFactorial = 7;
+let factorialDeCinco = factorial(numeroFactorial);
+console.log("El factorial de", numeroFactorial, "es", factorialDeCinco);
 
