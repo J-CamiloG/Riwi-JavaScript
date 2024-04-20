@@ -442,144 +442,198 @@ console.groupEnd();
 
 console.groupCollapsed("Ejercicio 61");
 // Ejercicio 61
+console.log("Área del trapecio:", (8 + 12) * 6 / 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 62");
-// Ejercicio 62
+// Ejercicio 62: Generar la tabla de multiplicar del número 9.
+for (let i = 1; i <= 10; i++) {
+    console.log("9 x", i, "=", 9 * i);
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 63");
-// Ejercicio 63
+// Ejercicio 63: Encontrar el número mayor entre 25, 30 y 35.
+console.log("El número mayor es:", Math.max(25, 30, 35));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 64");
-// Ejercicio 64
+// Ejercicio 64: Encontrar el número menor entre 80, 95 y 110.
+console.log("El número menor es:", Math.min(80, 95, 110));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 65");
-// Ejercicio 65
+// Ejercicio 65: Calcular el promedio de 8, 10 y 14.
+console.log("El promedio es:", (8 + 10 + 14) / 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 66");
-// Ejercicio 66
+// Ejercicio 66: Calcular la factorial de 8.
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+console.log("Factorial de 8:", factorial(8));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 67");
-// Ejercicio 67
+// Ejercicio 67: Redondear el número 9.2.
+console.log("Redondeo de 9.2:", Math.round(9.2));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 68");
-// Ejercicio 68
+// Ejercicio 68: Calcular el doble de 18.
+console.log("El doble de 18 es:", 18 * 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 69");
-// Ejercicio 69
+// Ejercicio 69: Calcular el triple de 7.
+console.log("El triple de 7 es:", 7 * 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 70");
-// Ejercicio 70
+// Ejercicio 70: Calcular el cuadrado de 10.
+console.log("El cuadrado de 10 es:", 10 ** 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 71");
-// Ejercicio 71
+// Ejercicio 71: Calcular el cubo de 5.
+console.log("El cubo de 5 es:", 5 ** 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 72");
-// Ejercicio 72
+// Ejercicio 72: Calcular la suma de los primeros 20 números naturales.
+console.log("La suma de los primeros 20 números naturales es:", (20 * (20 + 1)) / 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 73");
-// Ejercicio 73
+// Ejercicio 73: Calcular la resta entre 200 y 75.
+console.log("La resta entre 200 y 75 es:", 200 - 75);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 74");
-// Ejercicio 74
+// Ejercicio 74: Multiplicar 9 por 11.
+console.log("Multiplicación de 9 por 11:", 9 * 11);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 75");
-// Ejercicio 75
+// Ejercicio 75: Dividir 300 por 25.
+console.log("División de 300 por 25:", 300 / 25);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 76");
-// Ejercicio 76
+// Ejercicio 76: Obtener el módulo de 30 dividido por 9.
+console.log("Módulo de 30 dividido por 9:", 30 % 9);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 77");
-// Ejercicio 77
+// Ejercicio 77: Generar un número aleatorio entre 60 y 70.
+console.log("Número aleatorio entre 60 y 70:", Math.floor(Math.random() * (70 - 60 + 1)) + 60);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 78");
-// Ejercicio 78
+// Ejercicio 78: Elevar 4 a la potencia de 5.
+console.log("4 elevado a la potencia de 5:", 4 ** 5);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 79");
-// Ejercicio 79
+// Ejercicio 79: Calcular la raíz cuadrada de 196.
+console.log("Raíz cuadrada de 196:", Math.sqrt(196));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 80");
-// Ejercicio 80
+// Ejercicio 80: Convertir 120 grados Celsius a Fahrenheit.
+console.log("120 grados Celsius a Fahrenheit:", (120 * 9 / 5) + 32);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 81");
-// Ejercicio 81
+// Ejercicio 81: Calcular el área de un rectángulo de base 10 y altura 15.
+console.log("Área del rectángulo:", 10 * 15);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 82");
-// Ejercicio 82
+// Ejercicio 82: Calcular el perímetro de un círculo con radio 10.
+console.log("Perímetro del círculo:", 2 * Math.PI * 10);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 83");
-// Ejercicio 83
+// Ejercicio 83: Calcular el volumen de un cubo con lado 6.
+console.log("Volumen del cubo:", 6 ** 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 84");
-// Ejercicio 84
+// Ejercicio 84: Calcular el área de un rombo con diagonales de 14 y 18.
+console.log("Área del rombo:", (14 * 18) / 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 85");
-// Ejercicio 85
+// Ejercicio 85: Calcular el área de un trapecio con bases 10 y 15 y altura 8.
+console.log("Área del trapecio:", (10 + 15) * 8 / 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 86");
-// Ejercicio 86
+// Ejercicio 86: Generar la tabla de multiplicar del número 10.
+for (let i = 1; i <= 10; i++) {
+    console.log("10 x", i, "=", 10 * i);
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 87");
-// Ejercicio 87
+// Ejercicio 87: Encontrar el número mayor entre 35, 40 y 45.
+console.log("El número mayor es:", Math.max(35, 40, 45));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 88");
-// Ejercicio 88
+// Ejercicio 88: Encontrar el número menor entre 90, 105 y 120.
+console.log("El número menor es:", Math.min(90, 105, 120));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 89");
-// Ejercicio 89
+// Ejercicio 89: Calcular el promedio de 9, 11 y 15.
+console.log("El promedio es:", (9 + 11 + 15) / 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 90");
-// Ejercicio 90
+// Ejercicio 90: Calcular la factorial de 9.
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+console.log("Factorial de 9:", factorial(9));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 91");
-// Ejercicio 91
+// Ejercicio 91: Redondear el número 10.8.
+console.log("Redondeo de 10.8:", Math.round(10.8));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 92");
-// Ejercicio 92
+// Ejercicio 92: Calcular el doble de 21.
+console.log("El doble de 21 es:", 21 * 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 93");
-// Ejercicio 93
+// Ejercicio 93: Calcular el triple de 8.
+console.log("El triple de 8 es:", 8 * 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 94");
-// Ejercicio 94
+// Ejercicio 94: Calcular el cuadrado de 12.
+console.log("El cuadrado de 12 es:", 12 ** 2);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 95");
-// Ejercicio 95
+// Ejercicio 95: Calcular el cubo de 6.
+console.log("El cubo de 6 es:", 6 ** 3);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 96");
-// Ejercicio 96
+// Ejercicio 96: Calcular la suma de los primeros 25 números naturales.
+console.log("La suma de los primeros 25 números naturales es:", (25 * (25 + 1)) / 2);
 console.groupEnd();
