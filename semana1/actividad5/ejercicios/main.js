@@ -139,24 +139,6 @@ if (Math.sqrt(num15) % 1 === 0) {
 }
 console.groupEnd();
 
-console.groupCollapsed("Ejercicio 16");
-// 16. Determina si un número es un número de Fibonacci.
-function isFibonacci(n) {
-    return isPerfectSquare(5 * n * n + 4) || isPerfectSquare(5 * n * n - 4);
-}
-
-function isPerfectSquare(x) {
-    let s = Math.sqrt(x);
-    return s * s === x;
-}
-
-let numFibonacci = 13;
-if (isFibonacci(numFibonacci)) {
-    console.log(numFibonacci, "es un número de Fibonacci.");
-} else {
-    console.log(numFibonacci, "no es un número de Fibonacci.");
-}
-console.groupEnd();
 
 console.groupCollapsed("Ejercicio 17");
 // 17. Verifica si un número es una potencia de 2.
