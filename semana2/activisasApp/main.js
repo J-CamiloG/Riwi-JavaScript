@@ -162,7 +162,8 @@ function mostrarMenu() {
     [4] Actualizar informcaion paciente
     [5] Eliminar paciente
     [6] Buscar mascota por nombre
-    [7] Salir
+    [7] Buscar mascota por nombre
+    [8] Salir
     ---------
     `);
     return menu
@@ -228,6 +229,50 @@ function eliminarMascota(dataBase) {
         console.log("No se borro");
     }
 }
+// funcion calcular edad
+function calcularEdad(fechaNacimientoString) {
+    let fechaActual = new Date();
+    const fechaNacimiento = new Date(fechaNacimientoString);
+    let diferenciaAnios = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
+    
+    if (fechaActual.getMonth() < fechaNacimiento.getMonth() || (fechaActual.getMonth() === fechaNacimiento.getMonth() && fechaActual.getDate() < fechaNacimiento.getDate())) {
+        diferenciaAnios--;
+    }
+
+    return diferenciaAnios;
+    console.log(calcularEdad("1998-08-16"))
+}
+// funcion ingresar nuevo paciente 
+function registrarPaciente(dataBase) {
+    let nombrePaciente = prompt('ingresa el nombre del paciente');
+    let razaPaciente = prompt('ingresa  la raza');
+    let especiePaciente = prompt('ingresa  la raza');
+    let edadPaciente = prompt('ingresa fecha nacimiento  AAAA-MM-DD');
+    let pesoPaciente = prompt('ingresa  el peso');
+    let estadoPaciente = prompt('ingresa el estado del paciente');
+    let nombrePropietario = prompt('ingresa nombre propietario');
+    let documentoPropietario = prompt('ingresa nombre propietario');
+    let telefonoPropietario = prompt('ingresa nombre propietario');
+    let correoPropietario = prompt('ingresa nombre propietario');
+
+    let nombre = nombrePaciente;
+
+    dataBase[nombre]= {
+        nombre: nombrePaciente,
+        raza: razaPaciente,
+        especie: especiePaciente,
+        edad: calcularEdad(edadPaciente),
+        peso: pesoPaciente,
+        estado: estadoPaciente,
+        datosPropietario: {
+            nombre: nombrePropietario,
+            documento: documentoPropietario,
+            telefono: telefonoPropietario,
+            correo: correoPropietario
+        }
+    }
+}
+
 
 function app() {
     let iniciado = true
@@ -246,10 +291,13 @@ function app() {
             eliminarMascota(dataBase)
         } else if(resapuestaMenu === '6' ){
             buscarMascota(dataBase)
+        } else if(resapuestaMenu === '7'){
+            registrarPaciente(dataBase)
         } else {
             console.log('Programa Cerrado');
             iniciado = false
         }
+    console.log(dataBase);
     } while (iniciado);
 }
 
