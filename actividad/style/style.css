@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+
+    label{
+        color: white;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    div{
+        input {
+            padding: 8px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        p{
+            color: rgb(180, 38, 38);
+            font-weight: 700;
+            display: none;
+        }
+    }
+    .texto-login-fail{
+        color: rgb(180, 38, 38);
+        font-weight: 700;
+        display: none;
+    }
+    button{
+        background-color: #353535;
+        padding: 8px 25px;
+        cursor: pointer;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: #555555;
+    }
+}
+
