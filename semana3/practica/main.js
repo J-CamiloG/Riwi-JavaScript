@@ -1,5 +1,6 @@
 let numeros = [2,3,56,265,375,56,2,3,56]
 
+// encontrar el numero mayor 
 function encontrarNumeroMayor(numeros) {
     let numeroTemporal = 0;
 
@@ -12,6 +13,8 @@ function encontrarNumeroMayor(numeros) {
     console.log(numeroTemporal);
 }
 
+
+//quitar duplicados creando lista
 function quitarDuplicados(numeros) {
     
     let duplicados = []
@@ -24,6 +27,8 @@ function quitarDuplicados(numeros) {
     return duplicados
 }
 
+// crear duplicados no creando lista, modificando la que exisate
+
 function  quitarDuplicadosSinOtroArray (numeros) {
     let indice = 0 
     while (indice < numeros.length) {
@@ -35,7 +40,7 @@ function  quitarDuplicadosSinOtroArray (numeros) {
         } else {
             indice++
         }
-    }
+    } 
 }
 
 quitarDuplicadosSinOtroArray(numeros)
