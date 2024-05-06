@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <form class="formulario" action="">
-            <label for="">Login</label>
-            <div>
-                <input id="user-name" type="text" placeholder="Ingresa usuario" value="">
-                <p class="text-requerido">Ingresa la informacion </p>
+    <header class="header">
+
+    </header>
+    <main class="main">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="checkbox" name="" id="" checked autocomplete="off">
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox" name="" id="" autocomplete="off">
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox" name="" id="" autocomplete="off">
+            </label>
+        </div>
+        <div class="card p">
+            <div class="icon">
+                <i class="bi bi-bandaid-fill"></i>
             </div>
-            <div>
-                <input id="password" type="password" placeholder="******" value="">
-                <p class="text-requerido">Ingresa la informacion </p>
+            <p class="title">Registrar Mascota</p>
+            <p class="text">Registra usuario en la clinica</p>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="bi bi-bandaid-fill"></i>
             </div>
-            
-            <p class="texto-login-fail">Usuaro o contrasena errados</p>
-            <button id="submit" type="submit">Ingresar</button>
-        </form>
+            <p class="title">Mostrar</p>
+            <p class="text">Registra usuario en la clinica</p>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="bi bi-bandaid-fill"></i>
+            </div>
+            <p class="title">Editar</p>
+            <p class="text">Registra usuario en la clinica</p>
+        </div>
     </main>
     <script src="./main.js"></script>
 </body>
